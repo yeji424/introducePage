@@ -90,7 +90,7 @@
 }
 
 @media (max-width: 768px) {
-  .value .label{
+  .value, .label{
     font-size: 10px
   }
 }
