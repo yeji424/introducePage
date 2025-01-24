@@ -88,3 +88,9 @@
 .img-second:hover {
   opacity: 0.8; /* 약간의 투명도 변경 */
 }
+
+@media (max-width: 768px) {
+  .value .label{
+    font-size: 10px
+  }
+}
