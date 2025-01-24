@@ -1,0 +1,29 @@
+                     <!-- 반투명한 DIV 박스 -->
+                      <div class="hashTagLayout">
+                        <div class="hashTag">프론트앤드</div>
+                        <div class="hashTag">INFJ</div>
+                        <div class="hashTag">소프트웨어공학과</div>
+                      </div>
+
+                      //css
+                      
+/* 프로필 해시태그 전체 스타일 */
+.hashTagLayout {
+  margin-top: 70px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px; /* 박스 간격 */
+}
+
+/* 프로필 해시태그 스타일 */
+.hashTag {
+  background-color: rgba(0, 0, 0, 0.1); /* 반투명 배경 */
+  border-radius: 15px; /* 둥근 모서리 */
+  padding: 15px 20px; /* 여백 */
+  font-size: 1.2rem; /* 글씨 크기 */
+  font-weight: 500; /* 글씨 두께 */
+  color: #333; /* 글씨 색상 */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* 애니메이션 */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 살짝 떠있는 효과 */
+  text-align: center;
+}

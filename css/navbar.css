@@ -1,0 +1,47 @@
+/* 상단바 스타일 */
+.custom-navbar {
+  width: 55%;
+  margin: 0 auto; /* 가운데 정렬 */
+  border-radius: 50px; /* 끝을 둥글게 */
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+  margin-top: 40px; /* 위에서 띄우기 */
+  position: relative; /* 위치 설정 */
+  z-index: 1000; /* 다른 요소 위에 표시 */
+  padding: 10px 20px; /* 상단바 여백 */
+}
+
+/* 네비게이션 항목 */
+.nav-tabs {
+  display: flex;
+  justify-content: center; /* 항목을 가운데 정렬 */
+  gap: 30px; /* 카테고리 간 거리 */
+}
+
+/* 네비게이션 항목 */
+.nav-item a {
+  text-decoration: none;
+  color: gray;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* 마우스 오버 효과 */
+.nav-item a:hover {
+  color: #e74c3c; /* 붉은색으로 변경 */
+}
+
+
+@media (max-width: 768px) {
+  
+  .card img {
+    width: 80%;
+  }
+  .custom-navbar {
+    width: 100%;
+    max-width: 600px;
+  }
+  .nav-tabs {
+    gap: 10px; /* 카테고리 간 거리 */
+  }
+}

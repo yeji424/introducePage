@@ -1,0 +1,63 @@
+/* 화면이 세로 모드일 때 카드 크기 조정 */
+@media (max-width: 1200px) {
+
+  .profile-text {
+    padding-top: 0px;
+    gap: 10px;
+  }
+  
+  .card>img {
+    width: 50%;
+  }
+  .row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* 모든 박스의 너비를 같게 만들기 */
+  .a,
+  .b,
+  .c {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .b,
+  .c {
+    min-height: 100px; /* 최소 높이 설정 */
+    padding-top: 0px;
+  }
+  .custom-navbar {
+    width: 100%;
+    max-width: 700px;
+  }
+  /* 네비게이션 항목 */
+  .nav-tabs {
+    gap: 20px;
+  }
+
+}
+
+@media (max-width: 790px) {
+  
+  .card>img {
+    width: 80%;
+  }
+  .custom-navbar {
+    width: 100%;
+    max-width: 600px;
+  }
+  .nav-tabs {
+    gap: 10px;
+  }
+  .social-links {
+
+    gap: 5px;
+  }
+  .social-icon {
+    max-width: 38px;
+  }
+
+}

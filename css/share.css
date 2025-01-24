@@ -1,0 +1,162 @@
+
+.share-text{
+  background-color: white;
+  padding-top: 50px;
+  height: 100%;
+}
+/* 제목 스타일 */
+.share-title {
+  text-align: center; /* 중앙 정렬 */
+  font-weight: bold; /* 볼드체 */
+
+  font-size: clamp(1.5rem, 4vw, 2rem); /* 반응형 폰트 크기 */
+  padding-bottom: 35px;
+  color: #333;
+  border-bottom: 1px solid #ccc; /* 얇은 선 추가 */
+}
+
+
+/* 내용 스타일 */
+.share-description {
+  padding-top: 20px;
+  text-align: left; /* 왼쪽 정렬 */
+  font-size: clamp(1rem, 3vw, 1.5rem); /* 더 작은 반응형 폰트 크기 */
+  font-weight: bold; /* 굵은 글씨 */
+  line-height: 1.8;
+  color: #555;
+}
+
+.share-img{
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* 마우스 호버 애니메이션 */
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.share-img:hover {
+  transform: scale(1.04); /* 호버 시 아이콘 확대 */
+}
+
+/* 리스트 앞 이모지 텍스트 사용 */
+.share-description li {
+  list-style-type: none; /* 기본 기호 없애기 */
+  margin-bottom: 10px; /* 항목 간 간격 */
+  position: relative; /* 이모지를 배치하기 위해 relative 사용 */
+  padding-left: 0px; /* 왼쪽 여백 추가 */
+}
+
+.share-description li::before {
+  content: "✦"; /* 이모지 텍스트 */
+  position: absolute;
+  left: -20px; /* 이모지 위치 조정 */
+}
+
+.fav-description{
+  padding: 0px;
+  padding-top: 20px;
+  text-align: center; /* 왼쪽 정렬 */
+  font-size: clamp(1rem, 3vw, 1.5rem); /* 더 작은 반응형 폰트 크기 */
+  font-weight: bold; /* 굵은 글씨 */
+  line-height: 1.8;
+  color: #555;
+  transition: transform 0.2s ease; /* 크기 증가 애니메이션 */
+}
+
+.info:hover {
+  transform: scale(1.05); /* 마우스 오버 시 살짝 커짐 */
+}
+
+
+.plan-text{
+  background-color: white;
+  padding-top: 50px;
+  height: 100%;
+}
+/* 제목 스타일 */
+.plan-title {
+  text-align: center; /* 중앙 정렬 */
+  font-weight: bold; /* 볼드체 */
+
+  font-size: clamp(1.5rem, 4vw, 2rem); /* 반응형 폰트 크기 */
+  padding-bottom: 35px;
+  color: #333;
+  border-bottom: 1px solid #ccc; /* 얇은 선 추가 */
+}
+
+
+/* 내용 스타일 */
+.plan-description {
+  padding-top: 20px;
+  text-align: left; /* 왼쪽 정렬 */
+  font-size: clamp(1rem, 3vw, 1.5rem); /* 더 작은 반응형 폰트 크기 */
+  font-weight: bold; /* 굵은 글씨 */
+  line-height: 1.8;
+  color: #555;
+}
+/* 리스트 앞 이모지 텍스트 사용 */
+.plan-description li {
+  list-style-type: none; /* 기본 기호 없애기 */
+  margin-bottom: 10px; /* 항목 간 간격 */
+  position: relative; /* 이모지를 배치하기 위해 relative 사용 */
+  padding-left: 0px; /* 왼쪽 여백 추가 */
+}
+
+/* fav-box 스타일 */
+.fav-box {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%; /* 높이를 100%로 맞춰줍니다 */
+}
+
+/* 이미지 크기 조정 */
+.fav-image {
+  width: 100%; /* 부모 .fav-box에 맞춰서 이미지 크기 조정 */
+  object-fit: cover; /* 이미지 비율을 유지하면서 영역에 맞게 잘라내기 */
+  border-radius: 10px; /* 이미지 모서리 둥글게 */
+}
+
+/* fav-title 버튼 스타일 */
+.fav-title {
+  background-color: #f8f9fa;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  border-radius: 10px; /* 둥근 모서리 */
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 그림자 크기 증가 */
+}
+
+/* 클릭 시 버튼이 눌리는 효과 */
+.fav-title:active {
+  transform: scale(0.95); /* 버튼이 눌리는 효과 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* 클릭 시 그림자 효과 조정 */
+}
+
+/* 마우스 오버 시 색상 변경 */
+.fav-title:hover {
+  background-color: #e9ecef;
+}
+
+/* 드롭다운 내용 */
+.fav-description {
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, padding 0.3s ease;
+  padding: 0 25px;
+}
+
+.fav-description p {
+  margin: 10px 0;
+  font-size: 20PX;
+}

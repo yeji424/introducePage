@@ -1,0 +1,102 @@
+/* 기본적인 상자 스타일 */
+div body {
+  box-sizing: border-box;
+}
+
+
+
+.box {
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+/* container 크기 조정 */
+.container {
+  display: flex;
+  justify-content: center; /* 수평 중앙 */
+  align-items: center; /* 수직 중앙 */
+  height: 700px;
+  max-height: 80vh; /* 화면 높이의 80%까지만 차지 */
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* 스크롤 숨기기 */
+  margin-top: 50px;
+}
+
+.card {
+  width: 90%;
+  max-width: 1200px;
+  max-height: 100%; /* 컨테이너 크기에 맞춤 */
+  position: relative; /* 카드 내부 레이아웃을 위해 */
+  overflow-y: auto; /* 세로 스크롤 허용 */
+  overflow-x: hidden; /* 가로 스크롤 방지 */
+  padding: 0px; /* 내용과의 간격 */
+  background-color: white;
+  border-radius: 25px; /* 모서리 둥글게 */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* 그림자 크기 증가 */
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+  transform: translateY(100%);
+  transition: opacity 0.5s, transform 0.5s;
+  position: absolute; /* 부모 컨테이너에서 절대 위치 */
+}
+
+.card-body {
+  overflow-y: auto; /* 내용이 많을 때만 내부 스크롤 */
+}
+/* 카드 활성화될 때 */
+.card.active {
+  opacity: 1;
+  transform: translateY(0); /* Y축으로 원래 위치로 */
+}
+
+.d-none {
+  display: none !important;
+}
+
+.row {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+
+.b,
+.c {
+  min-height: 350px; /* 최소 높이 설정 */
+
+}
+
+.b{
+    align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+
+/* 스크롤바 전체 */
+::-webkit-scrollbar {
+  width: 6px;  /* 스크롤바의 너비를 얇게 설정 */
+  height: 6px; /* 수평 스크롤바의 높이도 얇게 설정 */
+}
+
+/* 스크롤바의 배경 */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* 스크롤바의 손잡이 */
+::-webkit-scrollbar-thumb {
+  background: #888;  /* 색상 */
+  border-radius: 10px; /* 둥글게 만들기 */
+}
+
+/* 손잡이가 hover 될 때 */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* 색상 변화 */
+}
