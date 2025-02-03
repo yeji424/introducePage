@@ -8,7 +8,7 @@
 .share-title {
   text-align: center; /* 중앙 정렬 */
   font-weight: bold; /* 볼드체 */
-
+  
   font-size: clamp(1.5rem, 4vw, 2rem); /* 반응형 폰트 크기 */
   padding-bottom: 35px;
   color: #333;
@@ -20,7 +20,7 @@
 .share-description {
   padding-top: 20px;
   text-align: left; /* 왼쪽 정렬 */
-  font-size: clamp(1rem, 3vw, 1.5rem); /* 더 작은 반응형 폰트 크기 */
+  font-size: clamp(1rem, 3vw, 1.4rem); /* 더 작은 반응형 폰트 크기 */
   font-weight: bold; /* 굵은 글씨 */
   line-height: 1.8;
   color: #555;

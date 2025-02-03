@@ -12,6 +12,7 @@ div body {
   font-size: 24px;
 }
 
+
 /* container 크기 조정 */
 .container {
   display: flex;
@@ -26,7 +27,7 @@ div body {
 }
 
 .card {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   max-height: 100%; /* 컨테이너 크기에 맞춤 */
   position: relative; /* 카드 내부 레이아웃을 위해 */

@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const originalImage = 'images/profile.jpg'; // 원본 이미지 경로
   const hoverImage = 'images/profile2.jpg'; // 마우스를 올렸을 때 바뀔 이미지 경로
   const originalText = '마우스를 올려보세요'; // 원본 텍스트
-  const hoverText = '눈이 심하게 안좋아 오티 때와 많이 다릅니다.<br>알아봐주시면 감사하겠습니다😂<br> p.s 집 앞 편의점 사장님도 두 명으로 알고 계십니다.';
+  const hoverText = '접니다';
 
   imgElement.addEventListener('mouseenter', function () {
     imgElement.src = hoverImage; // 마우스를 올리면 이미지 변경

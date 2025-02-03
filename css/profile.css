@@ -44,13 +44,14 @@
 }
 
 .label {
+  font-size: 20px;
   font-weight: bold;
   color: #333;
 }
 
 .value {
   color: #555;
-  font-size: 25px
+  font-size: 25px;
 }
 
 
@@ -87,4 +88,35 @@
 /* 프로필사진 마우스오버 */
 .img-second:hover {
   opacity: 0.8; /* 약간의 투명도 변경 */
+}
+
+@media (max-width: 768px) {
+  .value .label{
+    font-size: 10px
+  }
+}
+@media (min-width: 1200px) {
+  .profile-text {
+    max-width: 500px; /* 크기를 줄여 요소 내부 공간 확보 */
+    padding: 20px 10px; /* 위쪽 패딩 줄이기 */
+  }
+
+  .info {
+    padding: 8px 15px; /* 내부 패딩 줄이기 */
+    min-height: 50px; /* 높이 줄이기 */
+  }
+
+  .value {
+    font-size: 18px; /* 텍스트 크기 줄이기 */
+  }
+
+  .profile-img {
+    max-width: 120px; /* 프로필 이미지 크기 조정 */
+  }
+}
+
+@media (max-width: 768px) {
+  .value {
+    font-size: 16px; /* 작은 화면에서는 유지 */
+  }
 }

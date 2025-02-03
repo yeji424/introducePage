@@ -8,11 +8,16 @@
   position: relative; /* 위치 설정 */
   z-index: 1000; /* 다른 요소 위에 표시 */
   padding: 10px 20px; /* 상단바 여백 */
+  align-items: center;
+  align-content: center;
+  justify-content: center; /* 항목을 가운데 정렬 */
 }
 
 /* 네비게이션 항목 */
 .nav-tabs {
   display: flex;
+  align-items: center;
+  align-content: center;
   justify-content: center; /* 항목을 가운데 정렬 */
   gap: 30px; /* 카테고리 간 거리 */
 }
@@ -21,7 +26,7 @@
 .nav-item a {
   text-decoration: none;
   color: gray;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   transition: color 0.3s ease;
 }
@@ -42,6 +47,10 @@
     max-width: 600px;
   }
   .nav-tabs {
-    gap: 10px; /* 카테고리 간 거리 */
+    gap: 0px; /* 카테고리 간 거리 */
+  }
+  .nav-item a {
+    font-size: 10px;
+
   }
 }
