@@ -87,7 +87,6 @@
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
   .value .label{
     font-size: 10px
   }
@@ -117,9 +116,3 @@
     font-size: 16px; /* 작은 화면에서는 유지 */
   }
 }
-=======
-  .value, .label{
-    font-size: 20px
-  }
-}
->>>>>>> 04955f7a0fe91fcc88737782319d62b0d786356e
