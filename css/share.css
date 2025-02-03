@@ -61,6 +61,8 @@
   color: #555;
   transition: transform 0.2s ease; /* 크기 증가 애니메이션 */
 }
+.fav-description p{
+  font-size: 15px;}
 
 .info:hover {
   transform: scale(1.05); /* 마우스 오버 시 살짝 커짐 */
